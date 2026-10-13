@@ -4,6 +4,7 @@ FinTech City has five operating districts—payments, lending, fraud and identit
 Scope: The named products are real-world reference examples. They show what each district does; the capstone does not need to integrate every vendor.
 City map
 The map follows one purchase from left to right. The main road is the transaction path; the lower loop records the result and improves the next decision.
+```mermaid
 flowchart LR
     U([Customer starts purchase])
 
@@ -38,6 +39,7 @@ flowchart LR
     F -->|challenge, stop or review| R
     L -->|credit declined| X([Return to pay-now option])
     X --> Q
+```
 How to read the map
 Check: Compliance asks whether the activity is permitted. Fraud and identity then ask whether it appears genuine. Either district can stop, challenge, or route the case to human review.
 Choose: An approved customer either pays now or requests credit. Only the pay-later branch enters the lending district.
